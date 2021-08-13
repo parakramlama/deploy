@@ -41,6 +41,6 @@ const dotenv = require("dotenv").config();
 
   //Listening to Port
 
-  app.listen(90, ()=>{
+  app.listen(process.env.PORT || 90, ()=>{
     console.log(`App is running at localhost:90`);
 });
